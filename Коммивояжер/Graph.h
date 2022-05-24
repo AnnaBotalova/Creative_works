@@ -8,10 +8,10 @@
 #include <string>
 using namespace std;
 
-const int maxSize = 20;                                                      //максимальное число вершин
-extern int WinW;	                                                             //ширина окна (OpenGL)
-extern int WinH;				                                     //высота окна (OpenGL)
-struct vertCoord		                                                     //структура координат вершин
+const int maxSize = 20;  //РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ РІРµСЂС€РёРЅ
+extern int WinW; //С€РёСЂРёРЅР° РѕРєРЅР° (OpenGL)
+extern int WinH;//РІС‹СЃРѕС‚Р° РѕРєРЅР° (OpenGL)
+struct vertCoord //СЃС‚СЂСѓРєС‚СѓСЂР° РєРѕРѕСЂРґРёРЅР°С‚ РІРµСЂС€РёРЅ
 {
 	int x, y;
 };
@@ -19,8 +19,8 @@ struct vertCoord		                                                     //структу
 class Graph
 {
 private:
-	vector<int> vertList;			       //вектор вершин
-	int adjMatrix[maxSize][maxSize];		       //матрица смежности
+	vector<int> vertList; //РІРµРєС‚РѕСЂ РІРµСЂС€РёРЅ
+	int adjMatrix[maxSize][maxSize]; //РјР°С‚СЂРёС†Р° СЃРјРµР¶РЅРѕСЃС‚Рё
 public:
 	Graph();
 	~Graph();
@@ -41,53 +41,52 @@ public:
 	void EraseEdge(const int& vertex1, const int& vertex2);
 	void DrawGraph();
 };
-extern Graph graph;		                              //создается объект класса Graph
+extern Graph graph;		                              //СЃРѕР·РґР°РµС‚СЃСЏ РѕР±СЉРµРєС‚ РєР»Р°СЃСЃР° Graph
 //
-// Функции для решения задачи Коммивояжера
+// Р¤СѓРЅРєС†РёРё РґР»СЏ СЂРµС€РµРЅРёСЏ Р·Р°РґР°С‡Рё РљРѕРјРјРёРІРѕСЏР¶РµСЂР°
 //
-void Print_Matrix(int** matrix);		                                         //вывод текущей матрицы
-bool Salesman_Check(int** matrix);                                               //проверка: можно ли решить задачу Коммивояжера
-int** Change_Matrix();	                                                         //создается матрица, заменяя 0 на -1
-int* Search_MinElem(int* line, int n);	                                         //поиск минимального элемента в строке матрицы
-int** Reduct_Matrix(int** oldmatrix);		                                 //редукция матрицы
+void Print_Matrix(int** matrix);//РІС‹РІРѕРґ С‚РµРєСѓС‰РµР№ РјР°С‚СЂРёС†С‹
+bool Salesman_Check(int** matrix);//РїСЂРѕРІРµСЂРєР°: РјРѕР¶РЅРѕ Р»Рё СЂРµС€РёС‚СЊ Р·Р°РґР°С‡Сѓ РљРѕРјРјРёРІРѕСЏР¶РµСЂР°
+int** Change_Matrix(); //СЃРѕР·РґР°РµС‚СЃСЏ РјР°С‚СЂРёС†Р°, Р·Р°РјРµРЅСЏСЏ 0 РЅР° -1
+int* Search_MinElem(int* line, int n);//РїРѕРёСЃРє РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р° РІ СЃС‚СЂРѕРєРµ РјР°С‚СЂРёС†С‹
+int** Reduct_Matrix(int** oldmatrix); //СЂРµРґСѓРєС†РёСЏ РјР°С‚СЂРёС†С‹
 int** High_Zero(int** oldmatrix);
-void Print_Result();                                                             //вывод результата решения задачи Коммивояжера
+void Print_Result();//РІС‹РІРѕРґ СЂРµР·СѓР»СЊС‚Р°С‚Р° СЂРµС€РµРЅРёСЏ Р·Р°РґР°С‡Рё РљРѕРјРјРёРІРѕСЏР¶РµСЂР°
 //
-// Рисование кнопок (OpenGL)
+// Р РёСЃРѕРІР°РЅРёРµ РєРЅРѕРїРѕРє (OpenGL)
 //
-void drawButton1();                                                              //кнопка "Make New Graph / Circular View"
-void drawButton2();                                                              //кнопка "Salesman Task"
-void drawButton3();                                                              //кнопка "Print Matrix In Console"
-void drawButton4();                                                              //кнопка "Add Vertex"
-void drawButton5();                                                              //кнопка "Delete Vertex"
-void drawButton6();                                                              //кнопка "Add Edge"
-void drawButton7();                                                              //кнопка "Delete Edge"
+void drawButton1();//РєРЅРѕРїРєР° "Make New Graph / Circular View"
+void drawButton2();//РєРЅРѕРїРєР° "Salesman Task"
+void drawButton3();//РєРЅРѕРїРєР° "Print Matrix In Console"
+void drawButton4();//РєРЅРѕРїРєР° "Add Vertex"
+void drawButton5(); //РєРЅРѕРїРєР° "Delete Vertex"
+void drawButton6(); //РєРЅРѕРїРєР° "Add Edge"
+void drawButton7();//РєРЅРѕРїРєР° "Delete Edge"
 
-void drawRadius();                                                               //значение радиуса в окне OpenGL
+void drawRadius();  //Р·РЅР°С‡РµРЅРёРµ СЂР°РґРёСѓСЃР° РІ РѕРєРЅРµ OpenGL
+//
+// Р РёСЃРѕРІР°РЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РіСЂР°С„Р° (OpenGL)
+//
+void drawCircle(int x, int y, int R); //СЂРёСЃРѕРІР°РЅРёРµ РєСЂСѓРіР° 
+void drawBorderedCircle(int x, int y, int R); //СЂРёСЃРѕРІР°РЅРёРµ РєСЂСѓРіР°, РµСЃР»Рё РєСѓСЂСЃРѕСЂ РІ Р·РѕРЅРµ РІРµСЂС€РёРЅС‹
+void drawText(int nom, int x1, int y1); //СЂРёСЃРѕРІР°РЅРёРµ РІРµСЃР° СЂРµР±СЂР°
+void drawLine(int text, int x0, int y0, int x1, int y1); //СЂРёСЃРѕРІР°РЅРёРµ СЂРµР±СЂР° 
+void drawVertex(int n);//СЂРёСЃРѕРІР°РЅРёРµ РІРµСЂС€РёРЅС‹ 
 
+void makeGraph();//СЃРѕР·РґР°РЅРёРµ РіСЂР°С„Р°
+void setCoords(int i, int n); //СѓСЃС‚Р°РЅРѕРІРєР° РєРѕРѕСЂРґРёРЅР°С‚ РґР»СЏ РІРµСЂС€РёРЅ РіСЂР°С„Р°
 //
-// Рисование элементов графа (OpenGL)
+// Р¤СѓРЅРєС†РёРё - РїСЂРѕРІРµСЂРєРё
 //
-void drawCircle(int x, int y, int R);                                            //рисование круга 
-void drawBorderedCircle(int x, int y, int R);                                    //рисование круга, если курсор в зоне вершины
-void drawText(int nom, int x1, int y1);                                          //рисование веса ребра
-void drawLine(int text, int x0, int y0, int x1, int y1);                         //рисование ребра 
-void drawVertex(int n);                                                          //рисование вершины 
-
-void makeGraph();                                                                //создание графа
-void setCoords(int i, int n);                                    //установка координат для вершин графа
+int Circle_Check(int x, int y); //РїСЂРѕРІРµСЂРєР°: РєСѓСЂСЃРѕСЂ РІ Р·РѕРЅРµ РІРµСЂС€РёРЅС‹ РёР»Рё РЅРµС‚
+void Button_Check(int x, int y); //РїСЂРѕРІРµСЂРєР°: РєСѓСЂСЃРѕСЂ РІ Р·РѕРЅРµ РєРЅРѕРїРєРё РёР»Рё РЅРµС‚
 //
-// Функции - проверки
+// Р¤СѓРЅРєС†РёРё РѕС‚СЃР»РµР¶РёРІР°РЅРёСЏ РїРѕРІРµРґРµРЅРёСЏ РјС‹С€Рё
 //
-int Circle_Check(int x, int y);                                  //проверка: курсор в зоне вершины или нет
-void Button_Check(int x, int y);                                 //проверка: курсор в зоне кнопки или нет
+void mouseMove(int x, int y); //РѕС‚СЃР»РµР¶РёРІР°РЅРёРµ РґРІРёР¶РµРЅРёСЏ РєСѓСЂСЃРѕСЂР° РјС‹С€Рё
+void mouseClick(int button, int state, int x, int y); //С„СѓРЅРєС†РёСЏ СЂРµРіРёСЃС‚СЂР°С†РёРё РЅР°Р¶Р°С‚РёР№ РјС‹С€Рё
 //
-// Функции отслеживания поведения мыши
+// РР·РѕР±СЂР°Р¶РµРЅРёРµ
 //
-void mouseMove(int x, int y);                                    //отслеживание движения курсора мыши
-void mouseClick(int button, int state, int x, int y);            //функция регистрации нажатий мыши
-//
-// Изображение
-//
-void reshape(int w, int h);                                      //отвечает за масштабирование
-void display();                                                  //отвечает за изображение 
+void reshape(int w, int h); //РѕС‚РІРµС‡Р°РµС‚ Р·Р° РјР°СЃС€С‚Р°Р±РёСЂРѕРІР°РЅРёРµ
+void display(); //РѕС‚РІРµС‡Р°РµС‚ Р·Р° РёР·РѕР±СЂР°Р¶РµРЅРёРµ 
