@@ -2,6 +2,7 @@
 
 namespace datecalcul {
 
+	
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -10,7 +11,7 @@ namespace datecalcul {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -19,13 +20,12 @@ namespace datecalcul {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
-
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm()
 		{
@@ -51,14 +51,14 @@ namespace datecalcul {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -114,7 +114,7 @@ namespace datecalcul {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(273, 66);
 			this->button1->TabIndex = 3;
-			this->button1->Text = L"Российский формат";
+			this->button1->Text = L"Р РѕСЃСЃРёР№СЃРєРёР№ С„РѕСЂРјР°С‚";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click_1);
 			// 
@@ -126,19 +126,19 @@ namespace datecalcul {
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(273, 66);
 			this->button2->TabIndex = 4;
-			this->button2->Text = L"Американский формат";
+			this->button2->Text = L"РђРјРµСЂРёРєР°РЅСЃРєРёР№ С„РѕСЂРјР°С‚";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
 			// button3
-			// 
+			//
 			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button3->Location = System::Drawing::Point(453, 247);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(273, 66);
 			this->button3->TabIndex = 5;
-			this->button3->Text = L"Английский формат";
+			this->button3->Text = L"РђРЅРіР»РёР№СЃРєРёР№ С„РѕСЂРјР°С‚";
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
@@ -151,7 +151,7 @@ namespace datecalcul {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(61, 25);
 			this->label1->TabIndex = 6;
-			this->label1->Text = L"День";
+			this->label1->Text = L"Р”РµРЅСЊ";
 			// 
 			// label2
 			// 
@@ -162,7 +162,7 @@ namespace datecalcul {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(72, 25);
 			this->label2->TabIndex = 7;
-			this->label2->Text = L"Месяц";
+			this->label2->Text = L"РњРµСЃСЏС†";
 			// 
 			// label3
 			// 
@@ -173,7 +173,7 @@ namespace datecalcul {
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(47, 25);
 			this->label3->TabIndex = 8;
-			this->label3->Text = L"Год";
+			this->label3->Text = L"Р“РѕРґ";
 			// 
 			// textBox4
 			// 
@@ -226,13 +226,12 @@ namespace datecalcul {
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
 			this->Name = L"MyForm";
-			this->Text = L"Калькулятор дат";
+			this->Text = L"РљР°Р»СЊРєСѓР»СЏС‚РѕСЂ РґР°С‚";
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
-		}
-#pragma endregion
-		bool Protect() //защита от неверного ввода 
+		} #pragma endregion
+		bool Protect() //Р·Р°С‰РёС‚Р° РѕС‚ РЅРµРІРµСЂРЅРѕРіРѕ РІРІРѕРґР° 
 		{
 			if ((textBox1->Text->Length == 0) || (textBox2->Text->Length == 0))
 			{
@@ -248,13 +247,13 @@ namespace datecalcul {
 			}
 			int date = System::Convert::ToInt64(textBox1->Text);
 			int age = System::Convert::ToInt64(textBox3->Text);
-			if (textBox2->Text == "Январь" || textBox2->Text == "январь" || textBox2->Text == "Января" || textBox2->Text == "января")
+			if (textBox2->Text == "РЇРЅРІР°СЂСЊ" || textBox2->Text == "СЏРЅРІР°СЂСЊ" || textBox2->Text == "РЇРЅРІР°СЂСЏ" || textBox2->Text == "СЏРЅРІР°СЂСЏ")
 			{
 				if (!(date >= 1 && date <= 31))
 					return 0;
 			}
 			else
-				if (textBox2->Text == "Февраль" || textBox2->Text == "февраль" || textBox2->Text == "Февраля" || textBox2->Text == "февраля")
+				if (textBox2->Text == "Р¤РµРІСЂР°Р»СЊ" || textBox2->Text == "С„РµРІСЂР°Р»СЊ" || textBox2->Text == "Р¤РµРІСЂР°Р»СЏ" || textBox2->Text == "С„РµРІСЂР°Р»СЏ")
 				{
 					if (age % 4 == 0)
 					{
@@ -266,61 +265,61 @@ namespace datecalcul {
 							return 0;
 				}
 				else
-					if (textBox2->Text == "Март" || textBox2->Text == "март" || textBox2->Text == "марта" || textBox2->Text == "Марта")
+					if (textBox2->Text == "РњР°СЂС‚" || textBox2->Text == "РјР°СЂС‚" || textBox2->Text == "РјР°СЂС‚Р°" || textBox2->Text == "РњР°СЂС‚Р°")
 					{
 						if (!(date >= 1 && date <= 31))
 							return 0;
 					}
 					else
-						if (textBox2->Text == "Апрель" || textBox2->Text == "апрель" || textBox2->Text == "апреля" || textBox2->Text == "Апреля")
+						if (textBox2->Text == "РђРїСЂРµР»СЊ" || textBox2->Text == "Р°РїСЂРµР»СЊ" || textBox2->Text == "Р°РїСЂРµР»СЏ" || textBox2->Text == "РђРїСЂРµР»СЏ")
 						{
 							if (!(date >= 1 && date <= 30))
 								return 0;
 						}
 						else
-							if (textBox2->Text == "Май" || textBox2->Text == "май" || textBox2->Text == "Мая" || textBox2->Text == "мая")
+							if (textBox2->Text == "РњР°Р№" || textBox2->Text == "РјР°Р№" || textBox2->Text == "РњР°СЏ" || textBox2->Text == "РјР°СЏ")
 							{
 								if (!(date >= 1 && date <= 31))
 									return 0;
 							}
 							else
-								if (textBox2->Text == "Июнь" || textBox2->Text == "июнь" || textBox2->Text == "Июня" || textBox2->Text == "июня")
+								if (textBox2->Text == "РСЋРЅСЊ" || textBox2->Text == "РёСЋРЅСЊ" || textBox2->Text == "РСЋРЅСЏ" || textBox2->Text == "РёСЋРЅСЏ")
 								{
 									if (!(date >= 1 && date <= 30))
 										return 0;
 								}
 								else
-									if (textBox2->Text == "Июль" || textBox2->Text == "июль" || textBox2->Text == "июля" || textBox2->Text == "Июля")
+									if (textBox2->Text == "РСЋР»СЊ" || textBox2->Text == "РёСЋР»СЊ" || textBox2->Text == "РёСЋР»СЏ" || textBox2->Text == "РСЋР»СЏ")
 									{
 										if (!(date >= 1 && date <= 31))
 											return 0;
 									}
 									else
-										if (textBox2->Text == "Август" || textBox2->Text == "август" || textBox2->Text == "августа" || textBox2->Text == "Августа")
+										if (textBox2->Text == "РђРІРіСѓСЃС‚" || textBox2->Text == "Р°РІРіСѓСЃС‚" || textBox2->Text == "Р°РІРіСѓСЃС‚Р°" || textBox2->Text == "РђРІРіСѓСЃС‚Р°")
 										{
 											if (!(date >= 1 && date <= 31))
 												return 0;
 										}
 										else
-											if (textBox2->Text == "Сентябрь" || textBox2->Text == "сентябрь" || textBox2->Text == "Сентября" || textBox2->Text == "сентября")
+											if (textBox2->Text == "РЎРµРЅС‚СЏР±СЂСЊ" || textBox2->Text == "СЃРµРЅС‚СЏР±СЂСЊ" || textBox2->Text == "РЎРµРЅС‚СЏР±СЂСЏ" || textBox2->Text == "СЃРµРЅС‚СЏР±СЂСЏ")
 											{
 												if (!(date >= 1 && date <= 30))
 													return 0;
 											}
 											else
-												if (textBox2->Text == "Октябрь" || textBox2->Text == "октябрь" || textBox2->Text == "октября" || textBox2->Text == "Октября")
+												if (textBox2->Text == "РћРєС‚СЏР±СЂСЊ" || textBox2->Text == "РѕРєС‚СЏР±СЂСЊ" || textBox2->Text == "РѕРєС‚СЏР±СЂСЏ" || textBox2->Text == "РћРєС‚СЏР±СЂСЏ")
 												{
 													if (!(date >= 1 && date <= 31))
 														return 0;
 												}
 												else
-													if (textBox2->Text == "Ноябрь" || textBox2->Text == "ноябрь" || textBox2->Text == "Ноября" || textBox2->Text == "ноября")
+													if (textBox2->Text == "РќРѕСЏР±СЂСЊ" || textBox2->Text == "РЅРѕСЏР±СЂСЊ" || textBox2->Text == "РќРѕСЏР±СЂСЏ" || textBox2->Text == "РЅРѕСЏР±СЂСЏ")
 													{
 														if (!(date >= 1 && date <= 30))
 															return 0;
 													}
 													else
-														if (textBox2->Text == "Декабрь" || textBox2->Text == "декабрь" || textBox2->Text == "Декабря" || textBox2->Text == "декабря")
+														if (textBox2->Text == "Р”РµРєР°Р±СЂСЊ" || textBox2->Text == "РґРµРєР°Р±СЂСЊ" || textBox2->Text == "Р”РµРєР°Р±СЂСЏ" || textBox2->Text == "РґРµРєР°Р±СЂСЏ")
 														{
 															if (!(date >= 1 && date <= 31))
 																return 0;
@@ -340,77 +339,78 @@ namespace datecalcul {
 			}
 			return 1;
 		}
-		void Clear() // очистка полей
+		void Clear() // РѕС‡РёСЃС‚РєР° РїРѕР»РµР№
 		{
 			textBox4->Text = "";
 			textBox6->Text = "";
 			textBox5->Text = "";
 		}
-		int Month() // номер месяца
+		int Month() // РЅРѕРјРµСЂ РјРµСЃСЏС†Р°
 		{
 			int month = 0;
-			if (textBox2->Text == "Январь" || textBox2->Text == "январь" || textBox2->Text == "Января" || textBox2->Text == "января")
+			if (textBox2->Text == "РЇРЅРІР°СЂСЊ" || textBox2->Text == "СЏРЅРІР°СЂСЊ" || textBox2->Text == "РЇРЅРІР°СЂСЏ" || textBox2->Text == "СЏРЅРІР°СЂСЏ")
 			{
 				month = 1;
 			}
 			else
-				if (textBox2->Text == "Февраль" || textBox2->Text == "февраль" || textBox2->Text == "Февраля" || textBox2->Text == "февраля")
+				if (textBox2->Text == "Р¤РµРІСЂР°Р»СЊ" || textBox2->Text == "С„РµРІСЂР°Р»СЊ" || textBox2->Text == "Р¤РµРІСЂР°Р»СЏ" || textBox2->Text == "С„РµРІСЂР°Р»СЏ")
 				{
 					month = 2;
 				}
 				else
-					if (textBox2->Text == "Март" || textBox2->Text == "март" || textBox2->Text == "марта" || textBox2->Text == "Марта")
+					if (textBox2->Text == "РњР°СЂС‚" || textBox2->Text == "РјР°СЂС‚" || textBox2->Text == "РјР°СЂС‚Р°" || textBox2->Text == "РњР°СЂС‚Р°")
 					{
 						month = 3;
 					}
 					else
-						if (textBox2->Text == "Апрель" || textBox2->Text == "апрель" || textBox2->Text == "апреля" || textBox2->Text == "Апреля")
+						if (textBox2->Text == "РђРїСЂРµР»СЊ" || textBox2->Text == "Р°РїСЂРµР»СЊ" || textBox2->Text == "Р°РїСЂРµР»СЏ" || textBox2->Text == "РђРїСЂРµР»СЏ")
 						{
 							month = 4;
 						}
 						else
-							if (textBox2->Text == "Май" || textBox2->Text == "май" || textBox2->Text == "Мая" || textBox2->Text == "мая")
+							if (textBox2->Text == "РњР°Р№" || textBox2->Text == "РјР°Р№" || textBox2->Text == "РњР°СЏ" || textBox2->Text == "РјР°СЏ")
 							{
 								month = 5;
 							}
 							else
-								if (textBox2->Text == "Июнь" || textBox2->Text == "июнь" || textBox2->Text == "Июня" || textBox2->Text == "июня")
+								if (textBox2->Text == "РСЋРЅСЊ" || textBox2->Text == "РёСЋРЅСЊ" || textBox2->Text == "РСЋРЅСЏ" || textBox2->Text == "РёСЋРЅСЏ")
 								{
 									month = 6;
 								}
 								else
-									if (textBox2->Text == "Июль" || textBox2->Text == "июль" || textBox2->Text == "июля" || textBox2->Text == "Июля")
+									if (textBox2->Text == "РСЋР»СЊ" || textBox2->Text == "РёСЋР»СЊ" || textBox2->Text == "РёСЋР»СЏ" || textBox2->Text == "РСЋР»СЏ")
 									{
 										month = 7;
 									}
 									else
-										if (textBox2->Text == "Август" || textBox2->Text == "август" || textBox2->Text == "августа" || textBox2->Text == "Августа")
+										if (textBox2->Text == "РђРІРіСѓСЃС‚" || textBox2->Text == "Р°РІРіСѓСЃС‚" || textBox2->Text == "Р°РІРіСѓСЃС‚Р°" || textBox2->Text == "РђРІРіСѓСЃС‚Р°")
 										{
 											month = 8;
 										}
 										else
-											if (textBox2->Text == "Сентябрь" || textBox2->Text == "сентябрь" || textBox2->Text == "Сентября" || textBox2->Text == "сентября")
+											if (textBox2->Text == "РЎРµРЅС‚СЏР±СЂСЊ" || textBox2->Text == "СЃРµРЅС‚СЏР±СЂСЊ" || textBox2->Text == "РЎРµРЅС‚СЏР±СЂСЏ" || textBox2->Text == "СЃРµРЅС‚СЏР±СЂСЏ")
 											{
 												month = 9;
 											}
 											else
-												if (textBox2->Text == "Октябрь" || textBox2->Text == "октябрь" || textBox2->Text == "октября" || textBox2->Text == "Октября")
+												if (textBox2->Text == "РћРєС‚СЏР±СЂСЊ" || textBox2->Text == "РѕРєС‚СЏР±СЂСЊ" || textBox2->Text == "РѕРєС‚СЏР±СЂСЏ" || textBox2->Text == "РћРєС‚СЏР±СЂСЏ")
 												{
 													month = 10;
 												}
 												else
-													if (textBox2->Text == "Ноябрь" || textBox2->Text == "ноябрь" || textBox2->Text == "Ноября" || textBox2->Text == "ноября")
+													if (textBox2->Text == "РќРѕСЏР±СЂСЊ" || textBox2->Text == "РЅРѕСЏР±СЂСЊ" || textBox2->Text == "РќРѕСЏР±СЂСЏ" || textBox2->Text == "РЅРѕСЏР±СЂСЏ")
 													{
 														month = 11;
 													}
 													else
-														if (textBox2->Text == "Декабрь" || textBox2->Text == "декабрь" || textBox2->Text == "Декабря" || textBox2->Text == "декабря")
+														if (textBox2->Text == "Р”РµРєР°Р±СЂСЊ" || textBox2->Text == "РґРµРєР°Р±СЂСЊ" || textBox2->Text == "Р”РµРєР°Р±СЂСЏ" || textBox2->Text == "РґРµРєР°Р±СЂСЏ")
 														{
 															month = 12;
 														}
 			return month;
 		}
-		int Date() // день недели
+
+		int Date() // РґРµРЅСЊ РЅРµРґРµР»Рё
 		{
 			int a;
 			int y;
@@ -427,33 +427,33 @@ namespace datecalcul {
 			switch (Date())
 			{
 			case 0:
-				textBox5->Text = "Воскресенье";
+				textBox5->Text = "Р’РѕСЃРєСЂРµСЃРµРЅСЊРµ";
 				break;
 			case 1:
-				textBox5->Text = "Понедельник";
+				textBox5->Text = "РџРѕРЅРµРґРµР»СЊРЅРёРє";
 				break;
 			case 2:
-				textBox5->Text = "Вторник";
+				textBox5->Text = "Р’С‚РѕСЂРЅРёРє";
 				break;
 			case 3:
-				textBox5->Text = "Среда";
+				textBox5->Text = "РЎСЂРµРґР°";
 				break;
 			case 4:
-				textBox5->Text = "Четверг";
+				textBox5->Text = "Р§РµС‚РІРµСЂРі";
 				break;
 			case 5:
-				textBox5->Text = "Пятница";
+				textBox5->Text = "РџСЏС‚РЅРёС†Р°";
 				break;
 			case 6:
-				textBox5->Text = "Суббота";
+				textBox5->Text = "РЎСѓР±Р±РѕС‚Р°";
 				break;
 			}
 		}
-private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) { // российский формат
+private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) { // СЂРѕСЃСЃРёР№СЃРєРёР№ С„РѕСЂРјР°С‚
 	if (Protect())
 	{
 		Clear(); 
-		textBox6->Text = "Российский формат";
+		textBox6->Text = "Р РѕСЃСЃРёР№СЃРєРёР№ С„РѕСЂРјР°С‚";
 		textBox4->Text = textBox1->Text + ".";
 		textBox4->Text += System::Convert::ToString(Month());
 		textBox4->Text = textBox4->Text + "." + textBox3->Text;
@@ -461,14 +461,14 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	}
 	else
 	{
-		MessageBox::Show("Ошибка ввода!", "Ошибка");
+		MessageBox::Show("РћС€РёР±РєР° РІРІРѕРґР°!", "РћС€РёР±РєР°");
 	}
 }
-private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) { //американский формат
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) { //Р°РјРµСЂРёРєР°РЅСЃРєРёР№ С„РѕСЂРјР°С‚
 	if (Protect())
 	{
 		Clear();
-		textBox6->Text = "Американский формат";
+		textBox6->Text = "РђРјРµСЂРёРєР°РЅСЃРєРёР№ С„РѕСЂРјР°С‚";
 		textBox4->Text = System::Convert::ToString(Month()) + ".";
 		textBox4->Text += textBox1->Text;
 		textBox4->Text = textBox4->Text + "." + textBox3->Text;
@@ -476,14 +476,14 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	}
 	else
 	{
-		MessageBox::Show("Ошибка ввода!", "Ошибка");
+		MessageBox::Show("РћС€РёР±РєР° РІРІРѕРґР°!", "РћС€РёР±РєР°");
 	}
 }
-private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) { // английский формат
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) { // Р°РЅРіР»РёР№СЃРєРёР№ С„РѕСЂРјР°С‚
 	if (Protect())
 	{
 		Clear();
-		textBox6->Text = "Английский формат";
+		textBox6->Text = "РђРЅРіР»РёР№СЃРєРёР№ С„РѕСЂРјР°С‚";
 		textBox4->Text = textBox1->Text + ".";
 		textBox4->Text += System::Convert::ToString(Month());
 		textBox4->Text = textBox4->Text + "." + textBox3->Text;
@@ -491,7 +491,7 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 	}
 	else
 	{
-		MessageBox::Show("Ошибка ввода!", "Ошибка");
+		MessageBox::Show("РћС€РёР±РєР° РІРІРѕРґР°!", "РћС€РёР±РєР°");
 	}
 
 }
